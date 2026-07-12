@@ -41,7 +41,7 @@ jobs:
       - run: cd app && npm run pack-linux-arm64
 
       # Upload
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v7
         with:
           name: raspberry-distribution
           path: app/redist/LDtk**installer.AppImage

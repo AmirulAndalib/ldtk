@@ -37,7 +37,7 @@ jobs:
       - run: cd app && npm run pack-macos
 
       # Upload
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v7
         with:
           name: mac-distribution
           path: app/redist/LDtk**installer.dmg
